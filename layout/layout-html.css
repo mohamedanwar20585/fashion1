@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@font-face{
+    font-family: oswald;
+    src:url(font/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "open sans";
+    src: url(font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.hr {
+    width:100%;
+    border-bottom: 1px solid lightgray;
+}
+.clear {
+    content:"";
+    clear:both;
+}
+::-moz-selection {
+    background-color: #756f6f;
+    color: #fff;
+}
+::selection {
+    background-color: #756f6f;
+    color: #fff;
+}
+/* start nav */
+nav {
+    background-color:black;
+    width: 100%; 
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color:white;  
+}
+
+nav a i {   
+    padding: 15px;
+}
+nav a i:hover {
+    background-color: silver;
+    color: black;
+}
+nav a i.fa-magnifying-glass {
+    float: right;  
+}
+/* end nav */
+/* start header */
+header {
+    font-family: oswald;
+}
+header div#title-header {
+    text-align: center;
+    padding-top: 20px;
+}
+header div#title-header h1 {
+   font-size: 48px;
+   line-height: 72px;
+   font-weight: 700;
+   margin-bottom: 10px; 
+}
+header div#title-header h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 10px 0px 50px; 
+}
+header div#title-header h6 span {
+    background-color: black;
+    color:white;
+    padding: 1px 10px;
+}
+header div#image-header {
+    position: relative;
+}
+header div#image-header img {
+
+}
+header div#image-header div#title-image-header {
+    position: absolute;
+    top: 230px;
+    left: 35px;
+    color:white;
+    letter-spacing:3px;
+}
+header div#image-header div#title-image-header h1 {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+}
+header div#image-header div#title-image-header h1 b {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: 500;
+}
+header div#image-header div#title-image-header a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    letter-spacing:0;
+    background-color: rgba(192, 192, 192, 0.7);
+    color:black;
+    padding: 15px 25px;
+}
+header div#image-header div#title-image-header a:hover {
+    background-color: rgba(192, 192, 192);
+}
+/* end header */
+/* start main */
+main {
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+}
+main aside#aside-left {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+    padding-right: 10px;
+}
+main aside#aside-left article {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 20px;
+}
+main aside#aside-left article div.article-header {
+    text-align: center;
+    font-family: oswald;
+}
+main aside#aside-left article div.article-header h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 10px;
+}
+main aside#aside-left article div.article-header h5 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 30px;
+}
+main aside#aside-left article div.article-header h5 span {
+    color: #666666;
+}
+main aside#aside-left article img {
+    width:100%
+}
+main aside#aside-left article div.article-image-p {
+    font-family: "open sans";
+    text-align: justify;
+}
+main aside#aside-left article div.article-image-p p {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    margin: 0;
+    margin: 15px 0px;
+}
+main aside#aside-left article div.article-image-p p span {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 700;
+}
+main aside#aside-left article div.article-a {
+   padding: 30px 10px;
+}
+main aside#aside-left article div.article-a a.like {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border: 1px solid #CCCCCC;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 700;
+}
+main aside#aside-left article div.article-a a.like:hover{
+    background-color: lightgray;
+    border: 1px solid lightgray;
+}
+main aside#aside-left article div.article-a a.replise {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 700;
+    padding: 10px 25px;
+    margin-top: -12px;
+    float: right;
+}
+main aside#aside-left article div.article-a a.replise span {
+    background-color: white;
+    color:black;
+    padding: 0 5px;
+}
+main aside#aside-left article div.article-a a.replise:hover {
+    background-color: lightgray;
+    color:black;
+    border: none;
+}
+main aside#aside-left article div.article-footer {
+    padding-top:10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+main aside#aside-left article div.article-footer img {
+    width:90px;
+}
+main aside#aside-left article div.article-footer div.article-footer-hp {
+    padding-left: 13px;
+    vertical-align: top;
+    padding-top: 0px;
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;  
+}
+main aside#aside-left article div.article-footer div.article-footer-hp h4 {
+    margin-top: 0 ;
+    font-family: oswald;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+main aside#aside-left article div.article-footer div.article-footer-hp h4 span {
+    color: #828282;
+    font-family: oswald;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+}
+main aside#aside-left article div.article-footer div.article-footer-hp p {
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+}
+main aside#aside-right {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    padding-left: 10px;
+}
+main aside#aside-right article {
+    margin-top: 20px;
+}
+main aside#aside-right article div.article-right-image {
+    background-color: black;
+}
+main aside#aside-right article div.article-right-image img {
+
+}
+main aside#aside-right article div.article-right-image-ph {
+    padding: 10px 15px; 
+    background-color: black;
+    color: white;
+}
+main aside#aside-right article div.article-right-image-ph h4 {
+    margin-top: 5px;
+    font-family: oswald;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+main aside#aside-right article div.article-right-image-ph p {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+}
+main aside#aside-right div.aside-right-article {
+    margin-top: 45px;
+}
+main aside#aside-right div.aside-right-article div.aside-right-article-title {
+    font-family: oswald;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    padding: 15px ;
+}
+main aside#aside-right div.aside-right-article div.aside-right-article-title h4 {
+
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts {
+    background-color: white;
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts div.Popular-list {
+    border-bottom: 1px solid lightgray ;
+    padding: 10px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts div.Popular-list:hover {
+    background-color: rgb(211, 210, 210);
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts div.Popular-list div.Popular-image {
+    width: 65px;
+    margin-right: 15px;
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts div.Popular-list div.Popular-image img {
+
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts div.Popular-list div.Popular {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400; 
+    -ms-flex-item-align: center; 
+        -ms-grid-row-align: center; 
+        align-self: center;
+}
+main aside#aside-right div.aside-right-article div.Popular-Posts div.Popular-list div.Popular span {
+
+}
+main aside#aside-right div.aside-right-article div.Advertise {
+    background-color: white;
+    padding: 0px 20px;
+}
+main aside#aside-right div.aside-right-article div.Advertise span#span-Advertise-ad {
+    background-color: #F1F1F1;
+    display: inline-block;
+    margin: 20px 0px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 90px;
+}
+main aside#aside-right div.aside-right-article div.Tags {
+    background-color: white;
+    padding: 20px 20px;
+}
+main aside#aside-right div.aside-right-article div.Tags span {
+    font-family: "Open Sans";
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: #F1F1F1;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0px 10px 10px 0px;
+}
+main aside#aside-right div.aside-right-article div.Tags span#span-tag {
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    line-height: 23px;
+}
+main aside#aside-right div.aside-right-article div.Inspiration {
+    background-color: white;
+}
+main aside#aside-right div.aside-right-article div.Inspiration div.Inspiration-photo {
+   padding: 0px 10px;
+}
+main aside#aside-right div.aside-right-article div.Inspiration div.Inspiration-photo div.section-photo {
+    float:left;
+    width:50%;
+    padding: 10px ;
+}
+main aside#aside-right div.aside-right-article div.Follow {
+    background-color: white;
+    padding: 25px 20px;
+}
+main aside#aside-right div.aside-right-article div.Follow ul {
+
+}
+main aside#aside-right div.aside-right-article div.Follow ul li {
+    list-style: none;
+    display: inline-block;
+}
+main aside#aside-right div.aside-right-article div.Follow ul li a {
+    text-decoration: none;
+    color: black;
+    padding-right: 5px;
+}
+main aside#aside-right div.aside-right-article div.Follow ul li a:hover {
+    color: silver;
+}
+main aside#aside-right div.aside-right-article div.Follow ul li a i {
+    font-size: 24px;
+    line-height: 24px;
+}
+main aside#aside-right div.aside-right-article div.Subscribe {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    background-color: white;
+    padding: 15px;
+}
+main aside#aside-right div.aside-right-article div.Subscribe p {
+ margin-bottom: 10px;
+}
+main aside#aside-right div.aside-right-article div.Subscribe input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border:1px solid lightgrey;
+}
+main aside#aside-right div.aside-right-article div.Subscribe a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: #F44336;
+    text-align: center;
+}
+main aside#aside-right div.aside-right-article div.Subscribe a:hover {
+    background-color: lightgray;
+    color: black;
+}
+/* end main */
+/* start footer */
+footer {
+    background-color: #616161;
+    padding: 50px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+}
+footer a.footer-a {
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    padding: 10px 20px;
+}
+footer a.footer-a:hover{
+    background-color: lightgray;
+    color: black;
+}
+footer a i {
+    padding: 0 10px;
+}
+footer p {
+    color: white;
+    margin-top: 50px;
+}
+footer p a{
+    color:white;
+
+}
+/* end footer */
+div#Subscribe-float {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    background-color: #919191a8;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    padding: 250px;
+    visibility: hidden;
+    
+}
+div#Subscribe-float div.Subscribe-in {
+    background-color: white;
+    padding: 25px;
+
+}
+div#Subscribe-float div.Subscribe-in a.sub-a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    float: right;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 24px;
+    line-height: 24px;
+
+}
+div#Subscribe-float div.Subscribe-in h2 {
+    font-family: oswald;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+div#Subscribe-float div.Subscribe-in p {
+ margin-bottom: 20px;
+}
+div#Subscribe-float div.Subscribe-in input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border:1px solid lightgrey;
+}
+div#Subscribe-float div.Subscribe-in a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: #F44336;
+    text-align: center;
+}
+div#Subscribe-float div.Subscribe-in a:hover {
+    background-color: lightgray;
+    color: rgb(46, 16, 16);
+}
+@media screen and (max-width: 1124px) {
+    div#Subscribe-float {
+        padding: 200px;
+        padding-top:250px !important;    
+    }
+}
+@media screen and (max-width: 900px) {
+    header div#image-header div#title-image-header {
+        top: 100px;
+    }
+    div#Subscribe-float {
+        padding: 150px;
+        padding-top:250px !important;    
+    }
+}
+@media screen and (max-width: 880px) {
+    header div#image-header div#title-image-header h1 {
+        font-size: 22px;
+    }
+    header div#image-header div#title-image-header h1 b {
+        font-size: 45px;
+    }
+    header div#image-header div#title-image-header a {
+        padding: 15px 25px;
+    }
+}
+@media screen and (max-width: 850px) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    main aside#aside-left {
+        padding-right: 0px;
+    }
+    main aside#aside-right {
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 750px) {
+    div#Subscribe-float {
+        padding: 100px;
+        padding-top:250px !important;
+            
+    }
+}
+@media screen and (max-width: 600px) {
+    header div#image-header div#title-image-header {
+        top: 20px;
+    }
+    header div#image-header div#title-image-header h1 {
+        font-size: 22px;
+    }
+    header div#image-header div#title-image-header h1 b {
+        font-size: 36px;
+    }
+    header div#image-header div#title-image-header a {
+        padding: 10px 25px;
+    }
+}
+@media screen and (max-width: 545px) {
+    main aside#aside-left article div.article-footer {
+        padding-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    main aside#aside-left article div.article-footer img {
+        width: 40%;
+        margin: 0 auto;
+    }
+    main aside#aside-left article div.article-footer div.article-footer-hp {
+        width: 70%;
+        margin: 0 auto;
+    }
+    div#Subscribe-float {
+        padding-top:250px !important;
+        padding: 50px;    
+    }
+}
+@media screen and (max-width: 450px) {
+    header div#image-header div#title-image-header {
+        top: 5px;
+    }
+    header div#image-header div#title-image-header h1 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    header div#image-header div#title-image-header h1 b {
+        font-size: 26px;
+    }
+    header div#image-header div#title-image-header a {
+        padding: 5px 25px;
+    }
+}
+@media screen and (max-width: 350px) {
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+     main aside#aside-left article div.article-a a.like {
+         padding: 10px 15px;
+         font-size: 15px;
+         line-height: 23px;
+         font-weight: 400;
+     }
+     main aside#aside-left article div.article-a a.replise {
+        padding: 10px 15px;
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: 400;
+     }
+     main aside#aside-left article div.article-a a.replise span {
+         background-color: white;
+         color:black;
+         padding: 0 5px;
+     }
+    }
